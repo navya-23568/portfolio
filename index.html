@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,89 +10,230 @@
     <!-- ===== BOX ICONS ===== -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
 
-    <title>Navya | Portfolio</title>
+    <title>Navya | Data Analytics & AI/ML Portfolio</title>
+
+    <!-- ===== CUSTOM PHOTO & PROJECT STYLES ===== -->
+    <style>
+
+        /* Profile Photo */
+        .home__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home__photo {
+            width: 320px;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            border-radius: 0 !important;
+            clip-path: none !important;
+            box-shadow: none;
+        }
+
+        .home__blob {
+            display: none !important;
+        }
+
+        /* Project Information */
+        .project-info {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .project-info strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 768px) {
+
+            .home__photo {
+                width: 260px;
+                height: 320px;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
     <!--===== HEADER =====-->
     <header class="l-header">
+
         <nav class="nav bd-grid">
 
             <div>
-                <a href="#" class="nav__logo">Navya</a>
+                <a href="#home" class="nav__logo">
+                    Navya
+                </a>
             </div>
+
 
             <div class="nav__menu" id="nav-menu">
+
                 <ul class="nav__list">
+
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="#home" class="nav__link active-link">
+                            Home
+                        </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">
+                            About
+                        </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a>
+                        <a href="#skills" class="nav__link">
+                            Skills
+                        </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#work" class="nav__link">Work</a>
+                        <a href="#work" class="nav__link">
+                            Projects
+                        </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">
+                            Contact
+                        </a>
                     </li>
+
                 </ul>
+
             </div>
 
+
             <div class="nav__toggle" id="nav-toggle">
+
                 <i class='bx bx-menu'></i>
+
             </div>
 
         </nav>
+
     </header>
+
 
 
     <main class="l-main">
 
+
         <!--===== HOME =====-->
+
         <section class="home bd-grid" id="home">
 
+
             <div class="home__data">
+
                 <h1 class="home__title">
+
                     Hi,<br>
-                    I'm <span class="home__title-color">Navya</span><br>
+
+                    I'm
+                    <span class="home__title-color">
+                        Navya
+                    </span>
+                    <br>
+
                     B.Tech Student
+
                 </h1>
 
+
                 <p>
-                    Data Analytics & AI/ML Enthusiast
+                    Data Analytics | Python | AI/ML
                 </p>
 
-                <a href="#contact" class="button">Contact</a>
+
+                <p style="margin-top: 12px;">
+
+                    Passionate about turning data into
+                    meaningful insights and building
+                    practical AI/ML solutions.
+
+                </p>
+
+
+                <a href="#work" class="button">
+
+                    View My Work
+
+                </a>
+
             </div>
 
+
+
+            <!--===== SOCIAL LINKS =====-->
 
             <div class="home__social">
 
-                <a href="#" class="home__social-icon">
+
+                <!-- LinkedIn -->
+
+                <a
+                    href="https://www.linkedin.com/in/navya-sanaboina"
+                    target="_blank"
+                    class="home__social-icon"
+                    aria-label="LinkedIn"
+                >
+
                     <i class='bx bxl-linkedin'></i>
+
                 </a>
 
-                <a href="#" class="home__social-icon">
-                    <i class='bx bxl-behance'></i>
-                </a>
 
-                <a href="#" class="home__social-icon">
+                <!-- GitHub -->
+
+                <a
+                    href="https://github.com/navya-23568"
+                    target="_blank"
+                    class="home__social-icon"
+                    aria-label="GitHub"
+                >
+
                     <i class='bx bxl-github'></i>
+
+                </a>
+
+
+                <!-- Email -->
+
+                <a
+                    href="mailto:your-"navya41105@gmail.com"
+                    class="home__social-icon"
+                    aria-label="Email"
+                >
+
+                    <i class='bx bx-envelope'></i>
+
                 </a>
 
             </div>
 
 
+
             <!--===== HOME PHOTO =====-->
+
             <div class="home__img">
 
                 <img
@@ -105,30 +247,70 @@
         </section>
 
 
+
         <!--===== ABOUT =====-->
+
         <section class="about section" id="about">
 
-            <h2 class="section-title">About</h2>
+
+            <h2 class="section-title">
+                About
+            </h2>
+
 
             <div class="about__container bd-grid">
 
+
                 <div class="about__img">
-                    <img src="assets/img/Navya.jpg" alt="About Navya">
+
+                    <img
+                        src="assets/img/Navya.jpg"
+                        alt="About Navya"
+                    >
+
                 </div>
+
 
                 <div>
 
+
                     <h2 class="about__subtitle">
+
                         I'm Navya
+
                     </h2>
 
+
                     <p class="about__text">
-                        I am a B.Tech student passionate about Data Analytics,
-                        Artificial Intelligence and Machine Learning.
-                        I enjoy working with data, building practical projects,
-                        and continuously developing my technical and
-                        problem-solving skills.
+
+                        I am a B.Tech student with a strong
+                        interest in Data Analytics,
+                        Artificial Intelligence and
+                        Machine Learning.
+
                     </p>
+
+
+                    <p class="about__text">
+
+                        I enjoy working with Python,
+                        exploring datasets, identifying
+                        meaningful patterns and developing
+                        practical solutions using data.
+
+                    </p>
+
+
+                    <p class="about__text">
+
+                        I am continuously improving my
+                        programming, analytical and
+                        problem-solving skills through
+                        hands-on projects, internships
+                        and continuous learning.
+
+                    </p>
+
 
                 </div>
 
@@ -137,154 +319,584 @@
         </section>
 
 
+
         <!--===== SKILLS =====-->
+
         <section class="skills section" id="skills">
 
-            <h2 class="section-title">Skills</h2>
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
 
             <div class="skills__container bd-grid">
 
+
                 <div>
 
+
                     <h2 class="skills__subtitle">
-                        Professional Skills
+
+                        Technical Skills
+
                     </h2>
 
+
                     <p class="skills__text">
-                        My technical skills include web development,
-                        programming and data-focused technologies.
+
+                        My technical interests focus on
+                        programming, data analysis,
+                        machine learning and modern
+                        development tools.
+
                     </p>
 
 
-                    <!-- HTML -->
+
+                    <!-- PYTHON -->
+
                     <div class="skills__data">
 
                         <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
+
+                            <i class='bx bxl-python skills__icon'></i>
+
+                            <span class="skills__name">
+                                Python
+                            </span>
+
                         </div>
+
 
                         <div class="skills__bar skills__html"></div>
 
+
                         <div>
-                            <span class="skills__percentage">95%</span>
+
+                            <span class="skills__percentage">
+                                80%
+                            </span>
+
                         </div>
 
                     </div>
 
 
-                    <!-- CSS -->
+
+                    <!-- DATA ANALYTICS -->
+
                     <div class="skills__data">
 
                         <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
+
+                            <i class='bx bx-bar-chart-alt-2 skills__icon'></i>
+
+                            <span class="skills__name">
+                                Data Analytics
+                            </span>
+
                         </div>
+
 
                         <div class="skills__bar skills__css"></div>
 
+
                         <div>
-                            <span class="skills__percentage">85%</span>
+
+                            <span class="skills__percentage">
+                                75%
+                            </span>
+
                         </div>
 
                     </div>
 
 
-                    <!-- JAVASCRIPT -->
+
+                    <!-- MACHINE LEARNING -->
+
                     <div class="skills__data">
 
                         <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JavaScript</span>
+
+                            <i class='bx bx-brain skills__icon'></i>
+
+                            <span class="skills__name">
+                                Machine Learning
+                            </span>
+
                         </div>
+
 
                         <div class="skills__bar skills__js"></div>
 
+
                         <div>
-                            <span class="skills__percentage">65%</span>
+
+                            <span class="skills__percentage">
+                                70%
+                            </span>
+
                         </div>
 
                     </div>
 
 
-                    <!-- UI/UX -->
+
+                    <!-- HTML & CSS -->
+
                     <div class="skills__data">
 
                         <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UI/UX</span>
+
+                            <i class='bx bx-code-alt skills__icon'></i>
+
+                            <span class="skills__name">
+                                HTML & CSS
+                            </span>
+
                         </div>
+
 
                         <div class="skills__bar skills__ux"></div>
 
+
                         <div>
-                            <span class="skills__percentage">85%</span>
+
+                            <span class="skills__percentage">
+                                70%
+                            </span>
+
                         </div>
 
                     </div>
 
+
+
+                    <p
+                        class="skills__text"
+                        style="margin-top: 20px;"
+                    >
+
+                        <strong>
+                            Also familiar with:
+                        </strong>
+
+                        Pandas, NumPy,
+                        Data Visualization,
+                        SQL, Git & GitHub
+                        and basic JavaScript.
+
+                    </p>
+
+
                 </div>
+
 
 
                 <div>
 
                     <img
                         src="assets/img/work3.jpg"
-                        alt="Skills"
+                        alt="Data Analytics"
                         class="skills__img"
                     >
 
                 </div>
 
+
             </div>
 
         </section>
 
 
-        <!--===== WORK =====-->
+
+        <!--===== PROJECTS =====-->
+
         <section class="work section" id="work">
 
-            <h2 class="section-title">Work</h2>
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
 
             <div class="work__container bd-grid">
 
-                <a href="#" class="work__img">
-                    <img src="assets/img/work1.jpg" alt="Project 1">
-                </a>
 
-                <a href="#" class="work__img">
-                    <img src="assets/img/work2.jpg" alt="Project 2">
-                </a>
+                <!--===== PROJECT 1 =====-->
 
-                <a href="#" class="work__img">
-                    <img src="assets/img/work3.jpg" alt="Project 3">
-                </a>
+                <div class="work__img">
 
-                <a href="#" class="work__img">
-                    <img src="assets/img/work4.jpg" alt="Project 4">
-                </a>
+                    <img
+                        src="assets/img/work1.jpg"
+                        alt="AI Donor Prediction"
+                    >
 
-                <a href="#" class="work__img">
-                    <img src="assets/img/work5.jpg" alt="Project 5">
-                </a>
 
-                <a href="#" class="work__img">
-                    <img src="assets/img/work6.jpg" alt="Project 6">
-                </a>
+                    <div class="project-info">
+
+                        <strong>
+                            AI Donor Prediction
+                        </strong>
+
+
+                        Machine-learning project focused
+                        on analyzing donor-related data
+                        and building predictive solutions.
+
+
+                        <br>
+
+
+                        <span>
+
+                            Python • Pandas • NumPy
+                            • Scikit-learn
+
+                        </span>
+
+
+                        <br>
+
+
+                        <a
+                            href="https://github.com/navya-23568/AI_Donar_prediction"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            View on GitHub →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--===== PROJECT 2 =====-->
+
+                <div class="work__img">
+
+                    <img
+                        src="assets/img/work2.jpg"
+                        alt="Student Placement Analytics"
+                    >
+
+
+                    <div class="project-info">
+
+                        <strong>
+                            Student Placement Analytics
+                        </strong>
+
+
+                        Data analytics project focused
+                        on identifying patterns, trends
+                        and insights from student
+                        placement data.
+
+
+                        <br>
+
+
+                        <span>
+
+                            Python • Pandas • NumPy
+                            • Data Visualization
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--===== PROJECT 3 =====-->
+
+                <div class="work__img">
+
+                    <img
+                        src="assets/img/work3.jpg"
+                        alt="Python Data Explorer"
+                    >
+
+
+                    <div class="project-info">
+
+                        <strong>
+                            Python Data Explorer
+                        </strong>
+
+
+                        Python-based data exploration
+                        project focused on analyzing
+                        datasets and generating
+                        meaningful insights.
+
+
+                        <br>
+
+
+                        <span>
+
+                            Python • Pandas • NumPy
+                            • Data Analysis
+
+                        </span>
+
+
+                        <br>
+
+
+                        <a
+                            href="https://github.com/navya-23568/python-data-explorer-yuvaintern"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            View on GitHub →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--===== PROJECT 4 =====-->
+
+                <div class="work__img">
+
+                    <img
+                        src="assets/img/work4.jpg"
+                        alt="Data Analysis Project"
+                    >
+
+
+                    <div class="project-info">
+
+                        <strong>
+                            Data Analysis Project
+                        </strong>
+
+
+                        Exploratory analysis of data
+                        to discover trends,
+                        relationships and useful
+                        insights.
+
+
+                        <br>
+
+
+                        <span>
+
+                            Python • Data Analytics
+                            • Visualization
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--===== PROJECT 5 =====-->
+
+                <div class="work__img">
+
+                    <img
+                        src="assets/img/work5.jpg"
+                        alt="Machine Learning Project"
+                    >
+
+
+                    <div class="project-info">
+
+                        <strong>
+                            Machine Learning Project
+                        </strong>
+
+
+                        Practical machine-learning
+                        work focused on data
+                        preparation, model development
+                        and evaluation.
+
+
+                        <br>
+
+
+                        <span>
+
+                            Python • Machine Learning
+                            • Scikit-learn
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--===== PROJECT 6 =====-->
+
+                <div class="work__img">
+
+                    <img
+                        src="assets/img/work6.jpg"
+                        alt="Python Project"
+                    >
+
+
+                    <div class="project-info">
+
+                        <strong>
+                            Python Project
+                        </strong>
+
+
+                        Practical Python project
+                        demonstrating programming,
+                        problem-solving and
+                        data-focused skills.
+
+
+                        <br>
+
+
+                        <span>
+
+                            Python • Programming
+                            • Problem Solving
+
+                        </span>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
         </section>
 
 
+
         <!--===== CONTACT =====-->
+
         <section class="contact section" id="contact">
 
-            <h2 class="section-title">Contact</h2>
+
+            <h2 class="section-title">
+                Contact
+            </h2>
+
 
             <div class="contact__container bd-grid">
 
-                <form action="#" class="contact__form">
+
+                <div style="text-align: center;">
+
+
+                    <h2 class="about__subtitle">
+
+                        Let's Connect
+
+                    </h2>
+
+
+                    <p class="contact__text">
+
+                        I am interested in learning,
+                        collaborating on projects and
+                        exploring opportunities in
+                        Data Analytics, Artificial
+                        Intelligence and Machine Learning.
+
+                    </p>
+
+
+
+                    <!-- GITHUB -->
+
+                    <p style="margin-top: 20px;">
+
+                        <strong>
+                            GitHub
+                        </strong>
+
+                        <br>
+
+                        <a
+                            href="https://github.com/navya-23568"
+                            target="_blank"
+                        >
+
+                            github.com/navya-23568
+
+                        </a>
+
+                    </p>
+
+
+
+                    <!-- LINKEDIN -->
+
+                    <p style="margin-top: 15px;">
+
+                        <strong>
+                            LinkedIn
+                        </strong>
+
+                        <br>
+
+                        <a
+                            href="https://www.linkedin.com/in/navya-sanaboina"
+                            target="_blank"
+                        >
+
+                            linkedin.com/in/navya-sanaboina
+
+                        </a>
+
+                    </p>
+
+
+                </div>
+                <p style="margin-top: 15px;">
+
+                         <strong>
+                              Email
+                             </strong>
+
+                          <br>
+
+                      <a
+                          href="mailto:navya41105@gmail.com"
+                          >
+                            navya41105@gmail.com
+                              </a>
+
+                     </p>
+
+
+
+                <!-- CONTACT FORM -->
+
+                <form
+                    action="#"
+                    class="contact__form"
+                >
+
 
                     <input
                         type="text"
@@ -292,11 +904,13 @@
                         class="contact__input"
                     >
 
+
                     <input
                         type="email"
                         placeholder="Email"
                         class="contact__input"
                     >
+
 
                     <textarea
                         name="message"
@@ -305,102 +919,101 @@
                         class="contact__input"
                     ></textarea>
 
+
                     <input
                         type="submit"
                         value="Send"
                         class="contact__button button"
                     >
 
+
                 </form>
+
 
             </div>
 
         </section>
 
+
     </main>
 
 
+
     <!--===== FOOTER =====-->
+
     <footer class="footer">
 
-        <p class="footer__title">Navya</p>
+
+        <p class="footer__title">
+            Navya
+        </p>
+
 
         <div class="footer__social">
 
-            <a href="#" class="footer__icon">
-                <i class='bx bxl-facebook'></i>
+
+            <!-- LinkedIn -->
+
+            <a
+                href="https://www.linkedin.com/in/navya-sanaboina"
+                target="_blank"
+                class="footer__icon"
+                aria-label="LinkedIn"
+            >
+
+                <i class='bx bxl-linkedin'></i>
+
             </a>
 
-            <a href="#" class="footer__icon">
-                <i class='bx bxl-instagram'></i>
+
+            <!-- GitHub -->
+
+            <a
+                href="https://github.com/navya-23568"
+                target="_blank"
+                class="footer__icon"
+                aria-label="GitHub"
+            >
+
+                <i class='bx bxl-github'></i>
+
             </a>
 
-            <a href="#" class="footer__icon">
-                <i class='bx bxl-twitter'></i>
-            </a>
 
         </div>
 
+
         <p class="footer__copy">
-            &#169; Navya. All rights reserved.
+
+            &#169; 2026 Navya.
+            All rights reserved.
+
         </p>
+
 
     </footer>
 
 
+
     <!--===== SCROLL REVEAL =====-->
+
     <script src="https://unpkg.com/scrollreveal"></script>
 
+
     <!--===== MAIN JS =====-->
+
     <script src="assets/js/main.js"></script>
+
 
 </body>
 </html>
-/* ===== CLEAN RECTANGULAR PROFILE PHOTO ===== */
-
-.home__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home__photo {
-    width: 320px;
-    height: 380px;
-    object-fit: cover;
-    display: block;
-    border-radius: 0 !important;
-    clip-path: none !important;
-    box-shadow: none;
-}
-
-/* Remove old blob shape */
-.home__blob {
-    display: none !important;
-}
-
-/* Mobile */
-@media screen and (max-width: 768px) {
-    .home__photo {
-        width: 260px;
-        height: 320px;
-    }
-
-                       
+```
 
 
 
-            
-
-            
-
-                  
-               
-
+                
                    
-
-                   
-
-       
-
-  
+                    
+              
+          
+                      
