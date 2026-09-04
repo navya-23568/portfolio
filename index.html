@@ -1,62 +1,124 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ===== BOX ICONS ===== -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- ===== MAIN CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- ===== BOX ICONS ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <title>Navya | Data Science & AI/ML Portfolio</title>
 
-    <title>Navya | Data Analytics & AI/ML Portfolio</title>
-
-    <!-- ===== CUSTOM PHOTO & PROJECT STYLES ===== -->
     <style>
+        /* ================================
+           PROFILE PHOTO
+        ================================= */
 
-        /* Profile Photo */
         .home__img {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        <img src="navya.jpg" alt="Navya" class="home__photo">
         .home__photo {
             width: 320px;
             height: 380px;
             object-fit: cover;
             display: block;
-            border-radius: 0 !important;
-            clip-path: none !important;
-            box-shadow: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
 
         .home__blob {
             display: none !important;
         }
 
-        /* Project Information */
+        /* ================================
+           PROJECT CARDS
+        ================================= */
+
+        .work__container {
+            gap: 2rem;
+        }
+
+        .work__img {
+            padding: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .work__img > img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
         .project-info {
-            margin-top: 10px;
+            padding: 20px;
             font-size: 14px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .project-info strong {
             display: block;
-            font-size: 16px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .project-info p {
+            margin-bottom: 10px;
+        }
+
+        .project-tech {
+            margin-top: 12px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .project-result {
+            margin-top: 12px;
+        }
+
+        .project-result ul {
+            padding-left: 20px;
+            margin: 6px 0;
         }
 
         .project-link {
             display: inline-block;
-            margin-top: 8px;
+            margin-top: 14px;
             font-weight: 600;
         }
 
-        /* Mobile */
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ================================
+           PROFILE LINKS
+        ================================= */
+
+        .profile-links {
+            margin-top: 25px;
+        }
+
+        .profile-links a {
+            margin-right: 12px;
+        }
+
+        /* ================================
+           MOBILE
+        ================================= */
+
         @media screen and (max-width: 768px) {
 
             .home__photo {
@@ -64,11 +126,13 @@
                 height: 320px;
             }
 
-        }
+            .project-info {
+                padding: 16px;
+            }
 
+        }
     </style>
 </head>
-
 
 <body>
 
@@ -82,7 +146,6 @@
                     Navya
                 </a>
             </div>
-
 
             <div class="nav__menu" id="nav-menu">
 
@@ -122,11 +185,8 @@
 
             </div>
 
-
             <div class="nav__toggle" id="nav-toggle">
-
-                <i class='bx bx-menu'></i>
-
+                <i class="bx bx-menu"></i>
             </div>
 
         </nav>
@@ -134,14 +194,10 @@
     </header>
 
 
-
     <main class="l-main">
 
-
         <!--===== HOME =====-->
-
         <section class="home bd-grid" id="home">
-
 
             <div class="home__data">
 
@@ -153,84 +209,76 @@
                     <span class="home__title-color">
                         Navya
                     </span>
+
                     <br>
 
-                    B.Tech Student
+                    Data Science & AI/ML Enthusiast
 
                 </h1>
 
-
                 <p>
-                    Data Analytics | Python | AI/ML
+                    Python | Data Analytics | Machine Learning
                 </p>
 
+                <p style="margin-top: 15px; line-height: 1.7;">
 
-                <p style="margin-top: 12px;">
-
-                    Passionate about turning data into
-                    meaningful insights and building
-                    practical AI/ML solutions.
+                    B.Tech student passionate about data,
+                    machine learning and building practical
+                    solutions that turn data into meaningful
+                    insights.
 
                 </p>
-
 
                 <a href="#work" class="button">
-
-                    View My Work
-
+                    View My Projects
                 </a>
 
             </div>
-
 
 
             <!--===== SOCIAL LINKS =====-->
 
             <div class="home__social">
 
-
-                <!-- LinkedIn -->
-
                 <a
                     href="https://www.linkedin.com/in/navya-sanaboina"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="home__social-icon"
                     aria-label="LinkedIn"
                 >
-
-                    <i class='bx bxl-linkedin'></i>
-
+                    <i class="bx bxl-linkedin"></i>
                 </a>
-
-
-                <!-- GitHub -->
 
                 <a
                     href="https://github.com/navya-23568"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="home__social-icon"
                     aria-label="GitHub"
                 >
-
-                    <i class='bx bxl-github'></i>
-
+                    <i class="bx bxl-github"></i>
                 </a>
 
-
-                <!-- Email -->
+                <a
+                    href="https://huggingface.co/navya-421"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="home__social-icon"
+                    aria-label="Hugging Face"
+                >
+                    <i class="bx bx-chip"></i>
+                </a>
 
                 <a
-                    href="mailto:your-"navya41105@gmail.com"
+                    href="mailto:navya41105@gmail.com"
                     class="home__social-icon"
                     aria-label="Email"
                 >
-
-                    <i class='bx bx-envelope'></i>
-
+                    <i class="bx bx-envelope"></i>
                 </a>
 
             </div>
-
 
 
             <!--===== HOME PHOTO =====-->
@@ -248,70 +296,81 @@
         </section>
 
 
-
         <!--===== ABOUT =====-->
 
         <section class="about section" id="about">
 
-
             <h2 class="section-title">
-                About
+                About Me
             </h2>
 
-
             <div class="about__container bd-grid">
-
 
                 <div class="about__img">
 
                     <img
                         src="assets/img/Navya.jpg"
-                        alt="About Navya"
+                        alt="Navya"
                     >
 
                 </div>
 
-
                 <div>
 
-
                     <h2 class="about__subtitle">
-
                         I'm Navya
-
                     </h2>
-
 
                     <p class="about__text">
 
                         I am a B.Tech student with a strong
-                        interest in Data Analytics,
-                        Artificial Intelligence and
-                        Machine Learning.
+                        interest in Data Science, Data Analytics,
+                        Artificial Intelligence and Machine Learning.
 
                     </p>
-
 
                     <p class="about__text">
 
-                        I enjoy working with Python,
-                        exploring datasets, identifying
-                        meaningful patterns and developing
-                        practical solutions using data.
+                        I enjoy working with Python and data,
+                        exploring datasets, identifying patterns
+                        and developing practical solutions using
+                        machine learning and analytics.
 
                     </p>
-
 
                     <p class="about__text">
 
-                        I am continuously improving my
-                        programming, analytical and
-                        problem-solving skills through
-                        hands-on projects, internships
-                        and continuous learning.
+                        Through hands-on projects, I am continuously
+                        strengthening my programming, analytical,
+                        problem-solving and technical skills.
+
+                        My goal is to build useful data-driven
+                        applications and grow as a Data Science
+                        and AI/ML professional.
 
                     </p>
 
+                    <div class="profile-links">
+
+                        <a
+                            href="https://github.com/navya-23568"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://huggingface.co/navya-421"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button"
+                        >
+                            Hugging Face
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -320,39 +379,30 @@
         </section>
 
 
-
         <!--===== SKILLS =====-->
 
         <section class="skills section" id="skills">
-
 
             <h2 class="section-title">
                 Skills
             </h2>
 
-
             <div class="skills__container bd-grid">
-
 
                 <div>
 
-
                     <h2 class="skills__subtitle">
-
                         Technical Skills
-
                     </h2>
-
 
                     <p class="skills__text">
 
                         My technical interests focus on
-                        programming, data analysis,
-                        machine learning and modern
-                        development tools.
+                        programming, data analytics, machine
+                        learning and building practical
+                        data-driven applications.
 
                     </p>
-
 
 
                     <!-- PYTHON -->
@@ -361,7 +411,7 @@
 
                         <div class="skills__names">
 
-                            <i class='bx bxl-python skills__icon'></i>
+                            <i class="bx bxl-python skills__icon"></i>
 
                             <span class="skills__name">
                                 Python
@@ -369,20 +419,15 @@
 
                         </div>
 
-
                         <div class="skills__bar skills__html"></div>
 
-
                         <div>
-
                             <span class="skills__percentage">
                                 80%
                             </span>
-
                         </div>
 
                     </div>
-
 
 
                     <!-- DATA ANALYTICS -->
@@ -391,7 +436,7 @@
 
                         <div class="skills__names">
 
-                            <i class='bx bx-bar-chart-alt-2 skills__icon'></i>
+                            <i class="bx bx-bar-chart-alt-2 skills__icon"></i>
 
                             <span class="skills__name">
                                 Data Analytics
@@ -399,20 +444,15 @@
 
                         </div>
 
-
                         <div class="skills__bar skills__css"></div>
 
-
                         <div>
-
                             <span class="skills__percentage">
                                 75%
                             </span>
-
                         </div>
 
                     </div>
-
 
 
                     <!-- MACHINE LEARNING -->
@@ -421,7 +461,7 @@
 
                         <div class="skills__names">
 
-                            <i class='bx bx-brain skills__icon'></i>
+                            <i class="bx bx-brain skills__icon"></i>
 
                             <span class="skills__name">
                                 Machine Learning
@@ -429,50 +469,40 @@
 
                         </div>
 
-
                         <div class="skills__bar skills__js"></div>
 
-
                         <div>
-
                             <span class="skills__percentage">
                                 70%
                             </span>
-
                         </div>
 
                     </div>
 
 
-
-                    <!-- HTML & CSS -->
+                    <!-- SQL -->
 
                     <div class="skills__data">
 
                         <div class="skills__names">
 
-                            <i class='bx bx-code-alt skills__icon'></i>
+                            <i class="bx bx-data skills__icon"></i>
 
                             <span class="skills__name">
-                                HTML & CSS
+                                SQL
                             </span>
 
                         </div>
-
 
                         <div class="skills__bar skills__ux"></div>
 
-
                         <div>
-
                             <span class="skills__percentage">
-                                70%
+                                65%
                             </span>
-
                         </div>
 
                     </div>
-
 
 
                     <p
@@ -484,16 +514,14 @@
                             Also familiar with:
                         </strong>
 
-                        Pandas, NumPy,
-                        Data Visualization,
-                        SQL, Git & GitHub
-                        and basic JavaScript.
+                        Pandas, NumPy, Matplotlib,
+                        Seaborn, Scikit-learn,
+                        Joblib, HTML, CSS,
+                        Git & GitHub and basic JavaScript.
 
                     </p>
 
-
                 </div>
-
 
 
                 <div>
@@ -506,22 +534,18 @@
 
                 </div>
 
-
             </div>
 
         </section>
-
 
 
         <!--===== PROJECTS =====-->
 
         <section class="work section" id="work">
 
-
             <h2 class="section-title">
-                Projects
+                Featured Projects
             </h2>
-
 
             <div class="work__container bd-grid">
 
@@ -532,50 +556,81 @@
 
                     <img
                         src="assets/img/work1.jpg"
-                        alt="AI Donor Prediction"
+                        alt="AI Blood Donor Prediction"
                     >
-
 
                     <div class="project-info">
 
                         <strong>
-                            AI Donor Prediction
+                            🩸 AI Blood Donor Prediction
                         </strong>
 
+                        <p>
 
-                        Machine-learning project focused
-                        on analyzing donor-related data
-                        and building predictive solutions.
+                            A Machine Learning project that
+                            predicts whether a blood donor is
+                            likely to donate blood based on
+                            donor-related information.
 
+                        </p>
 
-                        <br>
+                        <p>
 
+                            The project focuses on preparing
+                            the dataset, handling class
+                            imbalance and building a
+                            classification model to identify
+                            potential donors.
 
-                        <span>
+                        </p>
 
-                            Python • Pandas • NumPy
-                            • Scikit-learn
+                        <div class="project-tech">
 
-                        </span>
+                            <strong>
+                                Technologies
+                            </strong>
 
+                            Python • Pandas • NumPy •
+                            Scikit-learn • Joblib
 
-                        <br>
+                        </div>
 
+                        <div class="project-tech">
+
+                            <strong>
+                                Model
+                            </strong>
+
+                            Balanced Logistic Regression
+
+                        </div>
+
+                        <div class="project-result">
+
+                            <strong>
+                                Performance
+                            </strong>
+
+                            <ul>
+                                <li>Accuracy: 72%</li>
+                                <li>Donor Recall: 83%</li>
+                                <li>Donor F1-score: 59%</li>
+                            </ul>
+
+                        </div>
 
                         <a
                             href="https://github.com/navya-23568/AI_Donar_prediction"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="project-link"
                         >
-
-                            View on GitHub →
-
+                            View Project on GitHub →
                         </a>
 
                     </div>
 
                 </div>
-
 
 
                 <!--===== PROJECT 2 =====-->
@@ -587,34 +642,68 @@
                         alt="Student Placement Analytics"
                     >
 
-
                     <div class="project-info">
 
                         <strong>
-                            Student Placement Analytics
+                            🎓 Student Placement Analytics
                         </strong>
 
+                        <p>
 
-                        Data analytics project focused
-                        on identifying patterns, trends
-                        and insights from student
-                        placement data.
+                            A data analytics project that
+                            explores the factors that influence
+                            student placement outcomes.
 
+                        </p>
 
-                        <br>
+                        <p>
 
+                            The project uses data analysis and
+                            visualization techniques to identify
+                            patterns and understand how academic,
+                            technical and professional factors
+                            relate to placement results.
 
-                        <span>
+                        </p>
 
-                            Python • Pandas • NumPy
-                            • Data Visualization
+                        <div class="project-tech">
 
-                        </span>
+                            <strong>
+                                Technologies
+                            </strong>
+
+                            Python • Pandas • Matplotlib • Seaborn
+
+                        </div>
+
+                        <div class="project-result">
+
+                            <strong>
+                                Analysis Includes
+                            </strong>
+
+                            <ul>
+                                <li>CGPA vs Placement</li>
+                                <li>Technical Skills vs Placement</li>
+                                <li>Soft Skills vs Placement</li>
+                                <li>Internship vs Placement</li>
+                                <li>Certifications vs Placement</li>
+                            </ul>
+
+                        </div>
+
+                        <a
+                            href="https://github.com/navya-23568/student-placement-analytics"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Project on GitHub →
+                        </a>
 
                     </div>
 
                 </div>
-
 
 
                 <!--===== PROJECT 3 =====-->
@@ -626,205 +715,85 @@
                         alt="Python Data Explorer"
                     >
 
-
                     <div class="project-info">
 
                         <strong>
-                            Python Data Explorer
+                            📊 Python Data Explorer
                         </strong>
 
+                        <p>
 
-                        Python-based data exploration
-                        project focused on analyzing
-                        datasets and generating
-                        meaningful insights.
+                            A Python-based data exploration
+                            project focused on working with
+                            datasets, exploring data patterns
+                            and generating meaningful insights.
 
+                        </p>
 
-                        <br>
+                        <p>
 
+                            The project demonstrates practical
+                            experience with data handling,
+                            exploration and analysis using
+                            Python libraries.
 
-                        <span>
+                        </p>
 
-                            Python • Pandas • NumPy
-                            • Data Analysis
+                        <div class="project-tech">
 
-                        </span>
+                            <strong>
+                                Technologies
+                            </strong>
 
+                            Python • Pandas • NumPy •
+                            Data Analysis
 
-                        <br>
-
+                        </div>
 
                         <a
                             href="https://github.com/navya-23568/python-data-explorer-yuvaintern"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="project-link"
                         >
-
-                            View on GitHub →
-
+                            View Project on GitHub →
                         </a>
 
                     </div>
 
                 </div>
 
-
-
-                <!--===== PROJECT 4 =====-->
-
-                <div class="work__img">
-
-                    <img
-                        src="assets/img/work4.jpg"
-                        alt="Data Analysis Project"
-                    >
-
-
-                    <div class="project-info">
-
-                        <strong>
-                            Data Analysis Project
-                        </strong>
-
-
-                        Exploratory analysis of data
-                        to discover trends,
-                        relationships and useful
-                        insights.
-
-
-                        <br>
-
-
-                        <span>
-
-                            Python • Data Analytics
-                            • Visualization
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!--===== PROJECT 5 =====-->
-
-                <div class="work__img">
-
-                    <img
-                        src="assets/img/work5.jpg"
-                        alt="Machine Learning Project"
-                    >
-
-
-                    <div class="project-info">
-
-                        <strong>
-                            Machine Learning Project
-                        </strong>
-
-
-                        Practical machine-learning
-                        work focused on data
-                        preparation, model development
-                        and evaluation.
-
-
-                        <br>
-
-
-                        <span>
-
-                            Python • Machine Learning
-                            • Scikit-learn
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!--===== PROJECT 6 =====-->
-
-                <div class="work__img">
-
-                    <img
-                        src="assets/img/work6.jpg"
-                        alt="Python Project"
-                    >
-
-
-                    <div class="project-info">
-
-                        <strong>
-                            Python Project
-                        </strong>
-
-
-                        Practical Python project
-                        demonstrating programming,
-                        problem-solving and
-                        data-focused skills.
-
-
-                        <br>
-
-
-                        <span>
-
-                            Python • Programming
-                            • Problem Solving
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
             </div>
 
         </section>
-
 
 
         <!--===== CONTACT =====-->
 
         <section class="contact section" id="contact">
 
-
             <h2 class="section-title">
                 Contact
             </h2>
 
-
             <div class="contact__container bd-grid">
 
-
-                <div style="text-align: center;">
-
+                <div>
 
                     <h2 class="about__subtitle">
-
                         Let's Connect
-
                     </h2>
-
 
                     <p class="contact__text">
 
                         I am interested in learning,
                         collaborating on projects and
                         exploring opportunities in
-                        Data Analytics, Artificial
-                        Intelligence and Machine Learning.
+                        Data Science, Data Analytics,
+                        Artificial Intelligence and
+                        Machine Learning.
 
                     </p>
-
 
 
                     <!-- GITHUB -->
@@ -840,14 +809,33 @@
                         <a
                             href="https://github.com/navya-23568"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
-
                             github.com/navya-23568
-
                         </a>
 
                     </p>
 
+
+                    <!-- HUGGING FACE -->
+
+                    <p style="margin-top: 15px;">
+
+                        <strong>
+                            Hugging Face
+                        </strong>
+
+                        <br>
+
+                        <a
+                            href="https://huggingface.co/navya-421"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            huggingface.co/navya-421
+                        </a>
+
+                    </p>
 
 
                     <!-- LINKEDIN -->
@@ -863,32 +851,31 @@
                         <a
                             href="https://www.linkedin.com/in/navya-sanaboina"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
-
                             linkedin.com/in/navya-sanaboina
-
                         </a>
 
                     </p>
 
 
-                    </div>
+                    <!-- EMAIL -->
+
                     <p style="margin-top: 15px;">
 
-                         <strong>
+                        <strong>
                             Email
                         </strong>
 
-                         <br>
+                        <br>
 
-                        <a
-                            href="mailto:navya41105@gmail.com"
-                          >
+                        <a href="mailto:navya41105@gmail.com">
                             navya41105@gmail.com
-                              </a>
+                        </a>
 
-                     </p>
+                    </p>
 
+                </div>
 
 
                 <!-- CONTACT FORM -->
@@ -898,20 +885,17 @@
                     class="contact__form"
                 >
 
-
                     <input
                         type="text"
                         placeholder="Name"
                         class="contact__input"
                     >
 
-
                     <input
                         type="email"
                         placeholder="Email"
                         class="contact__input"
                     >
-
 
                     <textarea
                         name="message"
@@ -920,95 +904,80 @@
                         class="contact__input"
                     ></textarea>
 
-
                     <input
                         type="submit"
                         value="Send"
                         class="contact__button button"
                     >
 
-
                 </form>
-
 
             </div>
 
         </section>
 
-
     </main>
-
 
 
     <!--===== FOOTER =====-->
 
     <footer class="footer">
 
-
         <p class="footer__title">
             Navya
         </p>
 
-
         <div class="footer__social">
-
-
-            <!-- LinkedIn -->
 
             <a
                 href="https://www.linkedin.com/in/navya-sanaboina"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__icon"
                 aria-label="LinkedIn"
             >
-
-                <i class='bx bxl-linkedin'></i>
-
+                <i class="bx bxl-linkedin"></i>
             </a>
-
-
-            <!-- GitHub -->
 
             <a
                 href="https://github.com/navya-23568"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__icon"
                 aria-label="GitHub"
             >
-
-                <i class='bx bxl-github'></i>
-
+                <i class="bx bxl-github"></i>
             </a>
 
+            <a
+                href="https://huggingface.co/navya-421"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__icon"
+                aria-label="Hugging Face"
+            >
+                <i class="bx bx-chip"></i>
+            </a>
 
         </div>
 
-
         <p class="footer__copy">
-
-            &#169; 2026 Navya.
-            All rights reserved.
-
+            &#169; 2026 Navya. All rights reserved.
         </p>
 
-
     </footer>
-
 
 
     <!--===== SCROLL REVEAL =====-->
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
-
     <!--===== MAIN JS =====-->
 
     <script src="assets/js/main.js"></script>
 
-
 </body>
 </html>
-```
 
 
 
